@@ -1,5 +1,5 @@
 # PNG Steganography Detector
-A basic web based interface which provides a couple of tools to help detect different forms of steganography within PNG files, created with Vite + ReactJS. Files are queued, but Web Workers haven't been used, causing some hanging while files are being processed. Hosted using GitHub Pages, available at https://s556902.github.io/df-mod7-png-stego-detector/
+A lightweight, web-based interface which provides a couple of methods to help detect different forms of steganography within PNG files, created with Vite + ReactJS. Files are uploaded, then queued and processed one by one. Web Workers haven't been used, causing some hanging while files are being processed. Hosted using GitHub Pages, available at https://s556902.github.io/df-mod7-png-stego-detector/
 
 ## Functionality
 - Basic Info - The tool scans the generic metadata of the image including file size, image resolution, file signature, color type, bit depth, interlacing, ancillary chunks, and how many total chunks are within the image.

@@ -1,0 +1,185 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a7a7a7a7;
+    border-radius: 10px;
+}
+
+
+
+.cell {
+    background-color: #2b2b2b;
+    border-radius: 1rem;
+    transition: height 375ms ease-in;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.cell-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 1rem 0px 1rem;
+    height: 6rem;
+    min-height: 6rem;
+}
+
+.cell-lower {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 6rem);
+    width: calc(100% - 2rem);
+    padding: 0rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+
+.cell-info-delete {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #a7a7a7;
+    transition: color 500ms;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.cell-info-delete:hover {
+    color: red;
+}
+
+.cell-info {
+    width: 45%;
+    height: 100%;
+    background-color: #111111;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 0.25rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.cell-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cell-lsb-rgba-container {
+    color: #ffffff;
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.55rem;
+    user-select: none
+}
+
+.cell-rgba-button {
+    cursor: pointer;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.text-cell-info-box {
+    overflow: auto;
+    min-height: 1rem;
+    max-height: 10rem;
+    padding: 0.25rem;
+    background-color: #2b2b2b;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    color: #ffffff;
+}
+
+.cell-info-divider {
+    height: 0.05rem;
+    width: calc(100% + 0.5rem);
+    transform: translateX(-0.25rem);
+    background-color: #a7a7a7;
+    margin-top: 0.5rem;
+}
+
+.cell-image {
+    width: 55%;
+    height: 100%;
+    background-color: #111111;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.cell-image-buttons {
+    display: flex;
+    direction: row;
+    gap: 0.25rem;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+.button-image-setting {
+    background-color: #111111c9;
+    border-radius: 0.5rem;
+    color: #d1d1d1;
+    border: 1px solid transparent;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    transition: color 500ms, background-color 500ms;
+    font-weight: lighter;
+}
+
+.button-selected {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.button-disabled {
+    background-color: #11111180;
+    color: #ffffff80;
+}
+
+
+
+.text-filename {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+}
+
+.text-hash {
+    color: #a7a7a7;
+    font-size: 1rem
+}
+
+.text-cell-info {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.text-cell-info-key {
+    color: #dddddd;
+    margin-top: 0.5rem;
+}
+
+.text-cell-info-value {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+
+
+.extra-top {
+    margin-top: 1rem;
+}
